@@ -89,20 +89,38 @@ $embed = <<<EOD
       searchAllForGood: true,
       locationSearch: true,
       keywordSearch: true,
-      displayFilters: true,
+      displayFilters: false,
       displayNav: false,
       registerToolbox: true
     }
   }
 </script>
-<script src="http://dev.gv2gt.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
+<script src="https://dev.gv2gt.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
 <div id="app"></div>
-<script src="http://dev.gv2gt.com/embed.js?0.1" data-partner="10"></script>
+<script src="https://dev.gv2gt.com/embed.js?0.1" data-partner="10"></script>
 EOD;
 
 echo '<pre id="embed" style="display: none;">' . htmlentities($embed) . '</pre>';
-echo $embed;
 ?>
+
+<!-- Give 2 Get embed -->
+<script>
+  window.overrideGv2gt = function () {
+    return {
+      partner: 10,
+      searchAllForGood: true,
+      locationSearch: true,
+      keywordSearch: true,
+      displayFilters: false, // note this is different than $embed
+      displayNav: false,
+      registerToolbox: true
+    }
+  }
+</script>
+<script src="https://dev.gv2gt.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
+<div id="app"></div>
+<script src="https://dev.gv2gt.com/embed.js?0.1" data-partner="10"></script>
+
 
 
 <!-- Give 2 Get embed -->
