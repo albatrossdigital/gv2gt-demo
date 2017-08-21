@@ -95,9 +95,9 @@ $embed = <<<EOD
     }
   }
 </script>
-<script src="https://dev.gv2gt.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
+<script src="http://dev.gv2gt.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
 <div id="app"></div>
-<script src="https://dev.gv2gt.com/embed.js?0.1" data-partner="10"></script>
+<script src="http://dev.gv2gt.com/embed.js?0.1" data-partner="10"></script>
 EOD;
 
 echo '<pre id="embed" style="display: none;">' . htmlentities($embed) . '</pre>';
