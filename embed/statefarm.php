@@ -111,7 +111,7 @@ echo '<pre id="embed" style="display: none;">' . htmlentities($embed) . '</pre>'
       searchAllForGood: true,
       locationSearch: true,
       keywordSearch: true,
-      displayFilters: false, // note this is different than $embed
+      displayFilters: true, // note this is different than $embed
       displayNav: false,
       registerToolbox: true
     }
