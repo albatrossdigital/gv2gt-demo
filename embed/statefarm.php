@@ -83,6 +83,7 @@
 $embed = <<<EOD
 <!-- Give 2 Get embed -->
 <script>
+  window.overrideGv2gtSkipCss = true;
   window.overrideGv2gt = function () {
     return {
       partner: 10,
@@ -97,7 +98,7 @@ $embed = <<<EOD
 </script>
 <script src="https://dev.gv2gt.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
 <div id="app"></div>
-<script src="https://dev.gv2gt.com/embed.js?0.1" data-partner="10"></script>
+<script src="https://dev.gv2gt.com/embed.js?0.2" data-partner="10"></script>
 EOD;
 
 echo '<pre id="embed" style="display: none;">' . htmlentities($embed) . '</pre>';
@@ -105,6 +106,7 @@ echo '<pre id="embed" style="display: none;">' . htmlentities($embed) . '</pre>'
 
 <!-- Give 2 Get embed -->
 <script>
+  window.overrideGv2gtSkipCss = true;
   window.overrideGv2gt = function () {
     return {
       partner: 10,
@@ -119,7 +121,7 @@ echo '<pre id="embed" style="display: none;">' . htmlentities($embed) . '</pre>'
 </script>
 <script src="https://dev.gv2gt.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
 <div id="app"></div>
-<script src="https://dev.gv2gt.com/embed.js?0.1" data-partner="10"></script>
+<script src="https://dev.gv2gt.com/embed.js?0.2" data-partner="10"></script>
 
 
 
