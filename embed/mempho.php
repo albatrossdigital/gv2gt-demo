@@ -82,9 +82,9 @@
 <?php
 
 $embed = <<<EOD
-<script src="http://dev-mempho.gv2gt.com.s3-website-us-west-2.amazonaws.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
+<script src="https://dev.gv2gt.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
 <div id="app"></div>
-<script src="http://dev-mempho.gv2gt.com.s3-website-us-west-2.amazonaws.com/embed.js?0.1" data-partner="133"></script>
+<script src="https://dev.gv2gt.com/embed.js?0.1" data-partner="133"></script>
 EOD;
 
 echo '<pre id="embed" style="display: none;">' . htmlentities($embed) . '</pre>';
