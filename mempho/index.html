@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Volunteer.  Get a free weekend pass to Mempho. Powered by First Tennessee Bank.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+  <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+
+</head>
+<body>
+
+<div class="page-container">
+
+  <div class="header">
+    <img src="img/header.png" alt="Mempho: Music, Food, Nature" width="900" height="300" class="header-image" />
+  </div>
+
+  <!-- Give 2 Get embed -->
+  <script>
+    window.overrideGv2gt = function () {
+      return {
+        partner: 133,
+        searchAllForGood: false,
+        locationSearch: false,
+        keywordSearch: false,
+        displayFilters: false,
+        displayNav: true,
+        registerToolbox: true
+      }
+    }
+  </script>
+  <script src="https://d3ie44n2upemu6.cloudfront.net/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html" data-partner="133"></script>
+
+  <div class="container">
+    <h2 style="font-size: 42px;text-align:center;">Volunteer at one of our projects to earn a free weekend pass to MEMPHO Music Festival</h2>
+  </div>
+
+  <div class="app-wrapper">
+    <div id="app"></div>
+  </div>
+  <script src="https://d3ie44n2upemu6.cloudfront.net/embed.js?0.6"></script>
+  <!-- Give 2 Get embed -->
+
+  <div class="container">
+    <hr/>
+    <p>
+      <a href="//memphofest.com" target="_blank">MEMPHO Music Festival Home</a> &nbsp;&middot;&nbsp;
+      <a href="/">Find a Project</a> &nbsp;&middot;&nbsp;
+      <a href="/terms.html">Terms of Service</a> &nbsp;&middot;&nbsp;
+      <a href="/privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+
+  <!-- App Template Overrides -->
+  <script type="x-template" id="project-teaser-info-override">
+    <div>
+      <div class="clearfix project-info-wrap">
+        <div class="box-wrap desc-wrap" v-html="projectDescShort"></div>
+        <div v-if="projectOrg" class="box-wrap organization-wrap">
+          <h4>Non-Profit Partner</h4>
+          <p>{{projectOrg}}</p>
+        </div>
+      </div>
+      <div class="box-wrap location-wrap">
+        <h4>Where</h4>
+        <div v-if="project.meetingplace" class="meeting-place-wrap" v-html="project.meetingplace"></div>
+        <div v-if="project.locs && project.locs.length" class="meeting-address-wrap">
+          <div v-if="project.locs[0].streetAddress1" class="address-street">{{project.locs[0].streetAddress1}}</div>
+          <span v-if="project.locs[0].city" class="address-city">{{project.locs[0].city}}</span>
+          <span v-if="project.locs[0].region" class="address-state">{{project.locs[0].region}}</span>
+          <span v-if="project.locs[0].postalCode" class="address-zipcode">{{project.locs[0].postalCode}}</span>
+        </div>
+      </div>
+      <div class="box-wrap date-wrap">
+        <h4>When</h4>
+        <div v-if="projectDateTime.time" class="time-wrap">{{projectDateTime.time}}</div>
+        <div class="date-wrap">{{projectDateTime.date}}</div>
+      </div>
+    </div>
+  </script>
+
+  <script type="x-template" id="project-heading-contact-override">
+    <div v-if="project.organizations && project.organizations.length" class="clearfix project-contact-wrap">
+      <h4 class="project-contact-header">Contact Information</h4>
+      <div class="project-contact">
+        <div class="organization-wrap">
+          <a href="mailto:volunteer@memphofest.com">volunteer@memphofest.com</a>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script type="x-template" id="overlay-override">
+    <div id="route-modal" v-bind:style="style" v-bind:class="{ 'in': open }" class="route-modal modal fade container" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <overlay-close></overlay-close>
+            <router-view class="overlay-view"></router-view>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-82284479-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
