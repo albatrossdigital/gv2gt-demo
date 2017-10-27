@@ -91,6 +91,7 @@ $embed = <<<EOD
       privacyUrl: 'https://www.statefarm.com/customer-care/privacy-security/privacy',
       searchAllForGood: true,
       locationSearch: true,
+      registerExternal: true,
       keywordSearch: true,
       containerClass: 'container-fluid',
       displayFilters: false,
