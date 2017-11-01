@@ -102,9 +102,14 @@ $embed = <<<EOD
 </script>
 <script src="https://dev.gv2gt.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
 <div id="app"></div>
- <!-- App Template Overrides -->
+<!-- App Template Overrides -->
 <script type="x-template" id="upcoming-projects-empty-override">
   <div id="empty-project" data-widget="nog-widget"></div>
+</script>
+<script type="x-template" id="project-teaser-title-override">
+  <div class="title-wrap">
+    <h3 class="margin-top-none">{{project.title | decodeEntities}}</h3>
+  </div>
 </script>
 <script src="https://dev.gv2gt.com/embed.js?0.2" data-partner="10"></script>
 EOD;
