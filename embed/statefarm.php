@@ -87,9 +87,13 @@ $embed = <<<EOD
   window.overrideGv2gt = function () {
     return {
       partner: 10,
+      termsUrl: 'https://www.statefarm.com/customer-care/disclosures/terms-of-use',
+      privacyUrl: 'https://www.statefarm.com/customer-care/privacy-security/privacy',
       searchAllForGood: true,
       locationSearch: true,
+      registerExternal: true,
       keywordSearch: true,
+      containerClass: 'container-fluid',
       displayFilters: false,
       displayNav: false,
       registerToolbox: true
@@ -98,6 +102,15 @@ $embed = <<<EOD
 </script>
 <script src="https://dev.gv2gt.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
 <div id="app"></div>
+<!-- App Template Overrides -->
+<script type="x-template" id="upcoming-projects-empty-override">
+  <div id="empty-project" data-widget="nog-widget"></div>
+</script>
+<script type="x-template" id="project-teaser-title-override">
+  <div class="title-wrap">
+    <h3 class="margin-top-none">{{project.title | decodeEntities}}</h3>
+  </div>
+</script>
 <script src="https://dev.gv2gt.com/embed.js?0.2" data-partner="10"></script>
 EOD;
 
@@ -105,28 +118,7 @@ echo '<pre id="embed" style="display: none;">' . htmlentities($embed) . '</pre>'
 ?>
 
 <!-- Give 2 Get embed -->
-<script>
-  window.overrideGv2gtSkipCss = true;
-  window.overrideGv2gt = function () {
-    return {
-      partner: 10,
-      searchAllForGood: true,
-      locationSearch: true,
-      keywordSearch: true,
-      displayFilters: true, // note this is different than $embed
-      displayNav: false,
-      registerToolbox: true
-    }
-  }
-</script>
-<script src="https://dev.gv2gt.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
-<div id="app"></div>
-<script src="https://dev.gv2gt.com/embed.js?0.2" data-partner="10"></script>
-
-
-
-<!-- Give 2 Get embed -->
-
+<?php echo $embed ?>
 
 </body>
 </html>
