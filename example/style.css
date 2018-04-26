@@ -1,0 +1,363 @@
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+}
+
+/* from memphofest.com */
+@font-face {
+  font-family: 'Forty-six';
+  src: url("fonts/Forty-six.ttf.woff") format("woff"), url("fonts/Forty-six.ttf.svg#Forty-six") format("svg"), url("fonts/Forty-six.ttf.eot"), url("fonts/Forty-six.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TypoGraphica";
+  src: url("fonts/TypoGraphica.eot?") format("eot"), url("fonts/TypoGraphica.woff") format("truetype"), url("fonts/TypoGraphica.svg#TypoGraphica") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* from https://mempho.frontgatetickets.com/ */
+body {
+  background: url(img/bgimage.jpg) no-repeat top left;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+/* app overrides */
+
+.list-inline.sharing {
+  /* @todo: something else here? */
+  display: none;
+}
+
+.container {
+  background-color: #f5f5f5;
+}
+
+.projects-view {
+  min-height: 600px
+}
+
+.header {
+  text-align: center;
+}
+
+.user-menu {
+  float: none !important;
+}
+
+.engage-wrap {
+  margin-top: 1em;
+}
+
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  height: auto;
+  min-height: 100%;
+}
+
+/* Taken from StateFarm modals*/
+.modal-body {
+  padding: 0;
+}
+.modal-content {
+  background-color: #e6e6e6;
+}
+
+.modal-body .close {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+#route-modal .page-title {
+  font-size: 45px;
+  background-color: #fff;
+  color: #313131;
+  padding: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+#route-modal h3.page-title {
+  font-family: "Forty-six",sans-serif;
+  font-size: 45px;
+}
+
+#route-modal .project-teaser-view,
+#route-modal .project-desc-wrap,
+#route-modal .engage-view-buttons {
+  padding: 30px 30px 25px;
+}
+#route-modal .col-sm-6 {
+  padding: 0;
+}
+
+/* Big */
+@media screen and (min-width: 768px) {
+  #route-modal .page-title {
+    font-size: 75px;
+    padding: 60px;
+  }
+
+  #route-modal h3.page-title {
+    font-size: 45px;
+  }
+
+  #route-modal .project-teaser-view,
+  #route-modal .project-desc-wrap,
+  #route-modal .engage-view-buttons {
+    padding: 60px 60px 40px;
+  }
+
+  #route-modal .col-sm-6 {
+    padding: 0;
+  }
+}
+
+
+
+
+/*.header-image {
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#wrapper > * {
+  background-color: white;
+}
+
+#wrapper > *:first-child {
+  padding-bottom: 5px;
+}
+
+#wrapper > *:last-child {
+  padding-bottom: 40px;
+}*/
+
+
+/* overrides specifically for memphofest.com */
+
+
+
+
+/* overrides from memphofest.com */
+body {
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #252525;
+}
+
+
+.project-list .project-teaser-view {
+  padding: 10px !important;
+}
+.project-list .project-teaser-view .project-view-header {
+  padding: 20px;
+  background-color: #fff;
+}
+.project-list .project-teaser-view .project-view-header .project-badge {
+  max-width: 100%;
+  position: relative;
+}
+.project-list .project-teaser-view .project-view-header .project-badge:after {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 110px;
+  height: 58px;
+  content: "Powered by";
+  color: #999;
+  background: url(img/first-republic-logo.svg) no-repeat;
+  background-position: bottom left;
+  background-size: 150px;
+}
+
+/* Big */
+@media screen and (min-width: 768px) {
+  .project-list .project-teaser-view .project-view-header {
+    min-height: 555px;
+  }
+  .project-list .project-teaser-view .project-view-header .project-badge:after {
+    width: 150px;
+    height: 65px;
+  }
+}
+
+.form-control {
+  font-size: 20px;
+}
+
+.or-sep-text,
+h2{
+  font-family: "Forty-six",sans-serif;
+}
+
+
+h3,
+h4{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h3 a,
+h4 a {
+  color: #813366;
+}
+
+h3 a:hover,
+h4 a:hover {
+  color: #63224c;
+  text-decoration: none;
+}
+
+h4.dashboard-projects-header {
+  font-size: 36px;
+  color: #98cb55;
+}
+
+.btn,
+.user-menu li a,
+.nog-block-cover-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  padding: 0.85em 1em;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #813366;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-family: "TypoGraphica",sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+
+.user-menu li {
+  width: 49.5%;
+}
+
+.user-menu.loggedin li {
+  width: 33%;
+}
+
+.user-menu li a {
+  width: 100%;
+}
+
+/* Small */
+@media screen and (max-width: 767px) {
+  .user-menu {
+    margin-bottom: 1rem;
+  }
+
+  .user-menu li {
+    margin-left: 0!important;
+    width: 100%!important;
+  }
+
+  .user-menu li a {
+    margin-bottom: 2px;
+  }
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.form-control{
+  height: 50px;
+}
+
+a.status-interested,
+a.status-confirmed {
+  background-color: #98cb55;
+}
+
+a.status-interested:focus,
+a.status-confirmed:focus,
+a.status-interested:hover,
+a.status-confirmed:hover {
+  background-color: #7fb538!important;
+}
+
+.engage-wrap .btn-info,
+.engage-wrap .btn-info:hover,
+.engage-wrap .btn-info:focus {
+  background-color: #6b8846 !important;
+}
+
+
+a.btn.btn-danger {
+  background-color: #B5000A!important;
+}
+
+a.btn.btn-danger:focus,
+a.btn.btn-danger:hover {
+  background-color: #890009!important;
+}
+
+.btn:hover,
+.user-menu li a:hover,
+.nog-block-cover-link:hover,
+.btn:focus,
+.user-menu li a:focus,
+.nog-block-cover-link:focus,
+.user-menu li a.router-link-active{
+  background-color: #63224c !important;
+  color: white;
+}
+
+
+.view .or-sep .or-sep-text {
+  font-size: 30px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  top: -20px;
+  background-color: #63224c;
+}
+
+a.social-network-button {
+  font-family: inherit;
+  text-transform: none;
+}
+
+.project-view-header>div {
+  margin-bottom: .5em;
+}
+
+
+/** temp? hide google/fb login */
+
+#row-2,
+#row-3 {
+  display: none;
+}
