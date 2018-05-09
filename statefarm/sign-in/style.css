@@ -1,0 +1,641 @@
+#welcome-index .wrapper {
+  background-color: #505050;
+  min-height: 150px;
+  padding: 0;
+  padding-left: calc(80px - 15px);
+  padding-right: calc(80px - 15px);
+}
+#welcome-index .nog-hero-small-text {
+  height: 150px;
+  position: relative;
+}
+#welcome-index .nog-hero-small-text > h2 {
+  font-size: 50px;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: perspective(1px) translateY(-50%);
+  transform: perspective(1px) translateY(-50%);
+}
+#welcome-index .register-view,
+#welcome-index .login-view,
+#welcome-index #reset-password-route,
+#welcome-index #password-recover-route {
+  padding: 30px 12vw;
+}
+#welcome-index .login-view,
+#welcome-index #reset-password-route,
+#welcome-index #password-recover-route {
+  background-color: #f3f3f3
+}
+#welcome-index .register-view {
+  background-color: #e6e6e6;
+}
+#welcome-index .view h4 {
+  font-size: 30px;
+  margin: 0 0 20px;
+}
+#welcome-index .form-control {
+  font-size: 23px;
+  padding: 0 22px;
+  height: 60px;
+  border: 0;
+}
+#welcome-index #password-recover-route .form-group {
+  max-width: 400px;
+}
+#welcome-index .help-block {
+  color: #e1261c;
+  margin: 6px 22px 16px;
+  font-size: 20px;
+}
+#welcome-index .text-message-rates {
+  color: #313131;
+  margin-left: 0;
+}
+#welcome-index #forgot-password-link {
+  font-size: 18px;
+}
+#welcome-index .or-sep {
+  border: 1px solid #8e8e8e;
+  height: 0;
+  margin: 50px auto;
+  position: relative;
+}
+#welcome-index .or-sep .or-sep-text {
+  background-color: #8e8e8e;
+  border: 1px solid #8e8e8e;
+  border-radius: 13px;
+  color: #fff;
+  font-size: 20px;
+  height: 26px;
+  left: 50%;
+  line-height: 22px;
+  margin: 0 0 0 -13px;
+  position: absolute;
+  text-align: center;
+  top: -13px;
+  width: 26px;
+}
+#welcome-index #login-submit-wrap,
+#welcome-index .submit-wrap {
+  width: 200px;
+  margin-right: 10vw;
+}
+#welcome-index #login-submit-wrap {
+  display: inline-block;
+  margin-right: 20px;
+}
+#welcome-index .btn-wrap {
+  width: 300px;
+  display: inline-block;
+}
+#welcome-index #login-submit {
+  margin: 30px 0;
+}
+#welcome-index .fa,
+#welcome-index .social-network-button-label {
+  background-repeat: no-repeat;
+  padding: 13px;
+  background-position: center;
+  background-size: contain;
+  margin-right: 24px;
+  margin-left: 0
+}
+#welcome-index .icon-google,
+#welcome-index #google-button-label {
+  background-image: url("../images/icons/icon-google-logo-white.svg");
+}
+#welcome-index .icon-facebook,
+#welcome-index #facebook-button-label {
+  background-image: url("../images/icons/icon-facebook-white.svg");
+}
+#welcome-index .google-button {
+  background-color: #505050;
+  color: #fff;
+}
+#welcome-index .facebook-button:hover {
+  color: #fff;
+}
+#welcome-index .google-button:hover {
+  background-color: #313131;
+  color: #fff;
+}
+#welcome-index .register-communications-wrap label {
+  font-size: 18px;
+}
+#welcome-index #register-communications .radio {
+  display: inline-block;
+}
+#welcome-index .radio label {
+  font-size: 20px;
+}
+#welcome-index #register-email {
+  margin-left: 20px;
+}
+#welcome-index #register-terms-wrap .checkbox {
+  font-size: 20px;
+}
+#welcome-index .has-error .checkbox {
+  color: #313131;
+}
+#welcome-index #register-terms-wrap label {
+  width: 100%;
+}
+#welcome-index .checkbox a {
+  color: #313131;
+  text-decoration: underline;
+}
+#welcome-index .checkbox a:hover {
+  color: #c31820;
+  text-decoration: underline;
+}
+#welcome-index #row-7,
+#welcome-index #row-8 {
+  margin-top: 20px;
+}
+#welcome-index #row-8 {
+  margin-bottom: 20px;
+}
+/* Reset Password CSS that's not covered above */
+
+#welcome-index #password-email-row {
+  margin-top: 30px;
+}
+#welcome-index .submit-wrap {
+  margin-bottom: 30px;
+}
+/* Alert Messages */
+
+#welcome-index #login-form .alert {
+  font-size: 20px;
+  color: #e1261c;
+  background-image: none;
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 0;
+}
+#welcome-index #login-form .alert a {
+  text-decoration: underline;
+}
+#welcome-index #register-form .alert {
+  font-size: 20px;
+  color: #e1261c;
+  background-image: none;
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding-left: 0;
+}
+#welcome-index #register-form .alert a {
+  text-decoration: underline;
+}
+#welcome-index .alert-error-password {
+  display: none;
+}
+/* #welcome-index .alert-error-register {
+  display: none;
+} */
+
+#welcome-index .messages > .alert-message > .alert {
+  font-size: 24px;
+  color: #e1261c;
+  background-image: none;
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 30px 12vw;
+  margin: 30px 0;
+}
+/* Error Handling */
+
+#welcome-index .validator-msg {
+  display: none;
+}
+#welcome-index .has-error .validator-msg {
+  display: block;
+}
+/* Loading Overlay */
+
+#welcome-index .loading-overlay {
+  font-size: 6em;
+  width: 100%;
+  z-index: 9999;
+  color: #e1261c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+#welcome-index .glyphicon-spin {
+  animation: glyphicon-spin 2s infinite linear
+}
+@keyframes glyphicon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+#welcome-index span#forgot-back-link {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 18px;
+}
+@media screen and (max-width: 1459px) {
+  /* CS Custom - When below 1459, do these */
+  #welcome-index .register-view,
+  #welcome-index .login-view,
+  #welcome-index #reset-password-route,
+  #welcome-index #login-form .alert,
+  #welcome-index #password-recover-route {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+@media screen and (max-width: 1199px) {
+  /* BOOTSTRAP 4 - When below 1199, do these */
+  #welcome-index .register-view,
+  #welcome-index .login-view,
+  #welcome-index #reset-password-route,
+  #welcome-index #login-form .alert,
+  #welcome-index #password-recover-route {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  /* CS Custom - When below 1023, do these */
+  #welcome-index .register-view,
+  #welcome-index .login-view,
+  #welcome-index #reset-password-route,
+  #welcome-index #login-form .alert,
+  #welcome-index #password-recover-route {
+    padding-left: 9vw;
+    padding-right: 9vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* BOOTSTRAP 4 - When below 991, do these */
+  #welcome-index .register-view,
+  #welcome-index .login-view,
+  #welcome-index #reset-password-route,
+  #welcome-index #login-form .alert,
+  #welcome-index #password-recover-route {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* BOOTSTRAP 4 - When below 767, do these */
+  #welcome-index .btn-wrap {
+    width: 50%;
+  }
+  #welcome-index .wrapper {
+    padding-left: calc(40px - 15px);
+    padding-right: calc(40px - 15px);
+  }
+  #welcome-index .register-view,
+  #welcome-index .login-view,
+  #welcome-index #login-form .alert,
+  #welcome-index #password-recover-route {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  /* BOOTSTRAP 4 - When below 575, do these */
+  #welcome-index .btn-wrap {
+    width: 100%;
+  }
+  #welcome-index .btn-wrap:first-child {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 439px) {
+  /* CS Custom - When below 439, do these */
+  #welcome-index #login-submit-wrap,
+  #welcome-index .submit-wrap {
+    width: 100%;
+    max-width: none;
+  }
+  #welcome-index .nog-hero-small-text > h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 379px) {
+  /* CS Custom - When below 379, do these */
+  #welcome-index .social-network-button-label {
+    display: none;
+  }
+  #welcome-index #password-recover-route .form-group {
+    max-width: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #search-index .wrapper,
+ #search-index .wrapper2 {
+   background-color: #505050;
+   color: #fff;
+   min-height: 150px;
+   padding: 0;
+   padding-left: calc( 80px - 15px);
+   padding-right: calc( 80px - 15px);
+ }
+
+#search-index .wrapper2 {
+  background-color: #8e8e8e;
+}
+
+#search-index .nog-hero-small-text,
+#search-index .nog-widget-container {
+  height: 150px;
+  position: relative;
+}
+
+#search-index #nog-widget-container,
+#search-index .nog-login-btn-container {
+  position: relative;
+  min-height: 180px;
+}
+
+#search-index .nog-login-col {
+  width: 200px;
+  float: right;
+}
+
+#search-index #nog-projects-widget,
+#search-index #nog-login-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: perspective(1px) translateY(-50%);
+  transform: perspective(1px) translateY(-50%);
+}
+
+#search-index .nog-hero-small-text>h2 {
+  font-size: 50px;
+  margin: 0;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: perspective(1px) translateY(-50%);
+  transform: perspective(1px) translateY(-50%);
+}
+
+#search-index #route-modal .page-title {
+  background-image: none !important;
+  padding: 100px 60px 60px !important;
+  font-size: 40px;
+}
+
+#search-index #route-modal .engage-view-buttons {
+  padding: 60px;
+}
+
+#search-index #route-modal .engage-view-buttons .btn {
+  /* display: inline; */
+  margin: 0 30px 30px 0;
+  /* padding: 24px 160px; */
+  min-width: 300px;
+}
+
+#search-index #route-modal .engage-view-buttons .btn-default {
+  background-color: #505050;
+}
+
+#search-index #route-modal .engage-view-buttons .btn-default:hover {
+  background-color: #313131 !important;
+}
+
+#search-index #route-modal .btn-danger {
+  background-color: #e1261c;
+  color: #fff;
+}
+
+#search-index #route-modal .btn-danger:hover {
+  background-color: #c31820;
+  color: #fff;
+}
+
+#search-index #route-modal .btn {
+  margin-bottom: 20px;
+}
+
+
+#search-index #route-modal .btn[disabled] {
+  background-color: #8e8e8e;
+  color: #e6e6e6;
+}
+
+#search-index .loading-overlay {
+  font-size: 64px !important;
+  width: 100%;
+  z-index: 9999;
+  text-align: center;
+  color: #e1261c;
+}
+
+#search-index .glyphicon-spin {
+  animation: glyphicon-spin 2s infinite linear
+}
+
+#search-index .social-link-wrap {
+  z-index: 1000;
+}
+
+.alert-login {
+  background-color: #e1261c;
+  position: relative;
+  width: 100%;
+  text-shadow: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 15px 35px;
+  margin: 0;
+  border-radius: 0;
+
+}
+
+.alert-login .nog-close-btn {
+  font-size: 40px;
+  margin: 0 20px 0 0;
+  border-radius: 3px;
+  background: none;
+  color: #fff;
+  border: none;
+  line-height: 1em;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: #c31820;
+  /* -webkit-animation: jello-horizontal 0.9s 2.5s both;
+  animation: jello-horizontal 0.9s 2.5s both; */
+  -webkit-animation: jello-horizontal 0.9s .7s both;
+  animation: jello-horizontal 0.9s .7s both;
+  cursor: pointer;
+}
+
+.alert-login .nog-close-btn:hover {
+  color: #313131;
+}
+
+.alert-login p {
+  color: #fff;
+  font-size: 26px;
+  display: inline;
+  margin: 0;
+}
+
+.swing-out-top-bck {
+  -webkit-animation: swing-out-top-bck 0.45s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+  animation: swing-out-top-bck 0.45s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+}
+
+.swing-in-top-fwd {
+  /* -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.5s both;
+  animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.5s both; */
+  -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@media screen and (max-width: 1199px) {
+  /* BOOTSTRAP 4 - When below 1199, do these */
+  #search-index .wrapper2 {
+    padding-bottom: 20px;
+  }
+  #search-index .project-teaser-view {
+    padding: 20px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* BOOTSTRAP 4 - When below 991, do these */
+  #search-index .nog-hero-title {
+    font-size: 50px
+  }
+  #search-index .nog-hero-text {
+    top: 60px;
+    bottom: auto;
+    left: 80px;
+  }
+  #search-index .nog-hero-left {
+    top: auto;
+    bottom: 60px;
+    left: 80px;
+  }
+  #search-index .project-teaser-view {
+    min-height: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* BOOTSTRAP 4 - When below 767, do these */
+  #search-index .wrapper,
+  #search-index .wrapper2 {
+    padding-left: calc( 40px - 15px);
+    padding-right: calc( 40px - 15px);
+  }
+  #search-index .nog-hero-small-text {
+    height: 100px;
+  }
+  #search-index .nog-login-btn-container {
+    min-height: 100px;
+  }
+  #search-index .nog-hero-small-text>h2 {
+    font-size: 40px;
+  }
+  #search-index .nog-login-col {
+    width: auto;
+    float: none;
+  }
+  #search-index #route-modal .project-desc {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #search-index #route-modal h3 {
+    padding:0 0 30px 15px;
+  }
+  #search-index #route-modal .page-title {
+    padding: 60px 15px 15px !important;
+  }
+  #search-index #route-modal .engage-view-buttons {
+    padding: 30px 0;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 689px) {
+  /* CS Custom - When below 689, do these */
+  #search-index .nog-hero-title {
+    font-size: 32px
+  }
+  #search-index .nog-hero-text {
+    top: 60px;
+    bottom: auto;
+    left: 40px;
+  }
+  #search-index .nog-hero-left {
+    top: auto;
+    bottom: 60px;
+    left: 40px;
+  }
+  #search-index .social-link-wrap,
+  #search-index .project-badge {
+    display: none;
+  }
+}
