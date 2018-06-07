@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="js placeholder">
+<!-- Dev Link: http://neighborhoodofgood.tcdev1.statefarm.com/user/reset.shtml -->
+<head>
+
+  <!-- Title Tags -->
+  <title>Partner login</title>
+  <!-- Keywords -->
+  <meta name="keywords" content=" PROVIDED BY WRITERS ">
+
+  <link rel="stylesheet" type="text/css" href="https://ac1.st8fm.com/cs/fonts/NewsGothic/Nog-NewsGothic.min.css">
+  <link rel="stylesheet" type="text/css" href="https://ac2.st8fm.com/cs/vendors/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css"
+        href="https://ac2.st8fm.com/cs/vendors/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://ac1.st8fm.com/cs/vendors/animate-css/3.5.0/animate.min.css" /> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <div class="app-wrapper">
+    <div id="app"></div>
+  </div>
+
+  <!-- Give 2 Get embed -->
+  <script>
+    
+    // window.overrideGv2gtSkipCss = true;
+    window.overrideGv2gt = function () {
+      return {
+        partner: 10,
+        termsUrl: 'https://www.statefarm.com/customer-care/disclosures/terms-of-use',
+        privacyUrl: 'https://www.statefarm.com/customer-care/privacy-security/privacy',
+        searchAllForGood: true,
+        locationSearch: true,
+        registerExternal: true,
+        keywordSearch: true,
+        containerClass: 'container-fluid',
+        displayFilters: true,
+        displayNav: true,
+        registerToolbox: true,
+        // Partner Mode
+        // -----------------
+        partnerApp: true,
+        parnterChildUrl: 'https://neighborhoodofgood.statefarm.com/take-action/index.shtml'
+      }
+    }
+  </script>
+  <script src="https://dev.gv2gt.com/static/xdomain.js" slave="https://toolbox.gv2gt.com/proxy.html"></script>
+  <script src="https://dev.gv2gt.com/embed.js?0.2" data-partner="10"></script>
+
+</body>
